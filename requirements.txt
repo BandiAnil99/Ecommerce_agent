@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn==0.32.1
+sqlalchemy==2.0.36
+pydantic==2.10.6
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+streamlit==1.41.0
+pandas==2.2.3
+requests==2.32.3
+langgraph==0.2.59
+openai==1.59.6
+pytest==8.3.4
+httpx==0.28.1
+# Optional: install chromadb separately if you want the full vector-store implementation on a machine with build tools.

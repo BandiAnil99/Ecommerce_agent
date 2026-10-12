@@ -1,0 +1,1 @@
+Velocity 15 is a balanced laptop built for Python programming, online classes, and general productivity. It offers 16 GB RAM, SSD storage, and efficient battery life. This model is suitable for students working with Python basics and light data analysis. Its warranty covers one year local service. It is not intended as a high-end machine learning workstation.
