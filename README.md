@@ -65,6 +65,14 @@ cd "C:\Users\bandi\Desktop\Ecommerce1\agentic-shopping-assistant"
 streamlit run frontend/streamlit_app.py
 ```
 
+## Deploy
+
+The repository includes a Render Blueprint for the FastAPI backend. In Render, create a new Blueprint and select this GitHub repository; Render will deploy the API and use `/health` for health checks. After deployment, copy the API service URL.
+
+To publish the Streamlit UI, create a Streamlit Community Cloud app from the same repository with `frontend/streamlit_app.py` as the main file. Once the UI is open, expand **Connection settings** and set **FastAPI Base URL** to the deployed API service URL (for example, `https://ecommerce-agent-api.onrender.com`).
+
+The free backend uses the included sample catalog and SQLite database. Data written to SQLite is not guaranteed to persist across service restarts.
+
 ## Example API calls
 
 ### Product search
