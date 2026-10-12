@@ -67,9 +67,9 @@ streamlit run frontend/streamlit_app.py
 
 ## Deploy
 
-The repository includes a Render Blueprint for the FastAPI backend and pins the deployment runtime to Python 3.12. In Render, create a new Blueprint and select this GitHub repository; Render will deploy the API and use `/health` for health checks. After deployment, copy the API service URL.
+The repository includes a Render Blueprint for both the FastAPI backend and Streamlit UI and pins the deployment runtime to Python 3.12. In Render, create or sync the Blueprint from this GitHub repository. The backend health check uses `/health`; the UI is configured to call the backend automatically.
 
-To publish the Streamlit UI, create a Streamlit Community Cloud app from the same repository with `frontend/streamlit_app.py` as the main file. Once the UI is open, expand **Connection settings** and set **FastAPI Base URL** to the deployed API service URL (for example, `https://ecommerce-agent-api.onrender.com`).
+The deployed services are available at `https://ecommerce-agent-api.onrender.com` and `https://ecommerce-agent-ui.onrender.com`. Free instances spin down after inactivity, so the first request may take 50 seconds or more.
 
 The free backend uses the included sample catalog and SQLite database. Data written to SQLite is not guaranteed to persist across service restarts.
 
